@@ -433,9 +433,15 @@ footer{background:var(--navy);color:var(--paper);padding-block:1.5rem}
 }
 
 /* ── Clutch reviews ────────────────────────────────────────── */
+/* Clutch widget type 3 is a fixed ~440px card — pair it with copy
+   rather than stretching a full-width box around it */
+.reviews-grid{
+  display:grid;grid-template-columns:1fr minmax(0,30rem);
+  gap:clamp(2rem,5vw,4.5rem);align-items:center;margin-top:2.75rem;
+}
 .clutch-holder{
-  margin-top:2.5rem;background:var(--card);border:2px solid var(--navy);
-  box-shadow:8px 8px 0 #3240681F;padding:1.25rem clamp(.75rem,2vw,1.5rem);
-  min-height:340px;overflow-x:auto;
+  background:var(--card);border:2px solid var(--navy);
+  box-shadow:8px 8px 0 #3240681F;padding:1.1rem;overflow-x:auto;
 }
 .clutch-holder .clutch-widget{max-width:100%}
+@media(max-width:1024px){.reviews-grid{grid-template-columns:1fr;gap:2.25rem}}
