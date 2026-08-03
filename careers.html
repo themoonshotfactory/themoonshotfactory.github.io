@@ -131,31 +131,42 @@
       <p class="lede">Any level of experience. We hire for skills and passion, not for the length of your resume. Expand a role for the full spec.</p>
     </div>
 
+    <div class="rv" style="border:2px solid var(--navy);background:var(--card);
+         box-shadow:6px 6px 0 #32406814;padding:1.75rem 1.6rem;margin-top:2.5rem">
+      <p class="stamp-label">How we work with AI</p>
+      <p style="margin-top:.9rem;color:var(--grey);font-size:.97rem">Coding agents are part of the
+        toolkit here, not a secret. We expect you to use them well &mdash; and to review what they
+        produce as rigorously as anything you wrote by hand. You are welcome to use them in our
+        interviews too; we are more interested in how you direct and verify the work than in
+        watching you type.</p>
+    </div>
+
     <div class="roles rv">
 
       <details class="role">
         <summary>
           <span class="role-n">ROLE-01</span>
-          <span><span class="role-t">Frontend Engineer</span><span class="role-tldr">TL;DR — React, GraphQL, Jest/React Testing Library, CSS/SASS</span></span>
+          <span><span class="role-t">Frontend Engineer</span><span class="role-tldr">TL;DR &mdash; TypeScript, React 19, Next.js, Tailwind, Playwright, streaming AI UIs</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
           <div>
             <h4>Required Skills</h4>
             <ul class="checks">
-              <li>Hands-on experience with JS (ES6 would be brilliant), AJAX, HTML, and CSS (SASS or LESS)</li>
-              <li>Working knowledge of React and D3 along with testing frameworks, such as Mocha and Jest</li>
-              <li>Ability to design and build well thought out GraphQL schemas and resolvers</li>
-              <li>Real-world application of user-centric design</li>
-              <li>Ability to present and visualize large-scale data in intuitive ways</li>
-              <li>Ability to package client side applications by leveraging CI/CD</li>
-              <li>Brownie points for AWS, Azure, GCP, Kubernetes, or distributed systems in general</li>
+              <li>Deep TypeScript, and modern React — Server Components, Suspense, streaming, and the transition APIs</li>
+              <li>App architecture in Next.js or React Router 7, with a real opinion about where rendering should happen</li>
+              <li>Styling with Tailwind and design tokens; comfortable with container queries, cascade layers, and modern native CSS</li>
+              <li>Typed data access end to end — TanStack Query with tRPC, or GraphQL/OpenAPI codegen</li>
+              <li>Testing with Vitest and React Testing Library, Playwright for end-to-end, and visual regression where it earns its keep</li>
+              <li>Accessibility to WCAG 2.2 and Core Web Vitals (INP in particular) treated as requirements, not polish</li>
+              <li>Interfaces for AI output: token streaming, interruptible generations, citations, confidence, and human-in-the-loop approval steps</li>
+              <li>Brownie points for data visualisation at scale — Visx, Observable Plot, or D3 when nothing else will do</li>
             </ul>
           </div>
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20—%20Frontend%20Engineer">Apply →</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20Frontend%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -163,25 +174,28 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-02</span>
-          <span><span class="role-t">Backend Engineer</span><span class="role-tldr">TL;DR — Python, Flask/Django, GraphQL, SQL, Docker, Pytest</span></span>
+          <span><span class="role-t">Backend Engineer</span><span class="role-tldr">TL;DR &mdash; Python 3.13, FastAPI, Pydantic, async, Postgres, MCP, tool-calling</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
           <div>
             <h4>Required Skills</h4>
             <ul class="checks">
-              <li>Hands-on experience with the entire Python ecosystem including Flask, Django, SQLAlchemy, Pandas, and Celery — or an equivalent stack in JavaScript</li>
-              <li>Deep understanding of asynchronous and event driven programming and implementing large scale microservices</li>
-              <li>Ability to design and implement well thought out APIs — GraphQL, REST, or gRPC — while baking in security</li>
-              <li>Experience with multiple databases including relational and document oriented stores</li>
-              <li>Ability to package and containerize server side applications by leveraging CI/CD</li>
-              <li>Brownie points for AWS, Azure, GCP, Kubernetes, or distributed systems in general</li>
+              <li>Modern async Python — FastAPI, Pydantic v2, SQLAlchemy 2.0 — or an equivalent TypeScript stack</li>
+              <li>Current Python tooling as a matter of course: uv, ruff, and a type checker in CI</li>
+              <li>Postgres as a first-class tool, pgvector included; Redis, and event-driven work over Kafka or NATS</li>
+              <li>API design across REST/OpenAPI, gRPC, and GraphQL, with authorisation and tenancy considered from the start</li>
+              <li>Durable execution and background work — Temporal, Celery, or arq — and idempotency you can defend</li>
+              <li>Building for LLMs: tool and function calling, MCP servers, structured outputs, streaming, and retries around non-deterministic calls</li>
+              <li>Treating token cost and latency as engineering budgets, with caching and model routing to match</li>
+              <li>Designing against prompt injection and running agent-executed code in a sandbox, not in your process</li>
+              <li>Brownie points for OpenTelemetry instrumentation you actually use to debug production</li>
             </ul>
           </div>
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20—%20Backend%20Engineer">Apply →</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20Backend%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -189,25 +203,28 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-03</span>
-          <span><span class="role-t">QA Engineer</span><span class="role-tldr">TL;DR — Python, Selenium, JMeter, SQL, Postman, BDD</span></span>
+          <span><span class="role-t">Quality &amp; Evals Engineer</span><span class="role-tldr">TL;DR &mdash; Playwright, pytest, k6, contract testing, LLM eval harnesses, red-teaming</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
           <div>
             <h4>Required Skills</h4>
             <ul class="checks">
-              <li>Hands-on experience with test automation and developing harness/tools for complex products</li>
-              <li>Expertise in scripting languages such as Python and bash</li>
-              <li>Ability to test APIs and stress test microservices oriented applications</li>
-              <li>Working knowledge of relational databases and document oriented stores</li>
-              <li>Experience authoring and implementing test plans and test cases, plus identifying, investigating, and prioritizing bugs</li>
-              <li>Brownie points for AWS, Azure, GCP, Kubernetes, or distributed systems in general</li>
+              <li>Playwright for browser and API automation, with pytest or Vitest underneath</li>
+              <li>Load and soak testing with k6 or Locust, and the judgement to know what the results mean</li>
+              <li>Contract testing (Pact, Schemathesis) and property-based testing (Hypothesis, fast-check)</li>
+              <li>Owning CI quality gates: flake triage, test data management, and keeping the suite fast enough that people run it</li>
+              <li>Evaluating non-deterministic systems — golden sets, rubric grading, LLM-as-judge calibrated against human labels</li>
+              <li>Regression suites for model and prompt changes, so a swap can ship without crossed fingers</li>
+              <li>Adversarial testing: jailbreaks, prompt injection, data exfiltration, and tool-abuse paths</li>
+              <li>Debugging from traces rather than reproducing by hand</li>
+              <li>Brownie points for having built an eval harness that changed a shipping decision</li>
             </ul>
           </div>
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20—%20QA%20Engineer">Apply →</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20Quality%20and%20Evals%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -215,25 +232,29 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-04</span>
-          <span><span class="role-t">DevOps Engineer</span><span class="role-tldr">TL;DR — Ansible, Terraform, Docker, Kubernetes, AWS/GCP/Azure</span></span>
+          <span><span class="role-t">DevOps Engineer</span><span class="role-tldr">TL;DR &mdash; OpenTofu/Terraform, Kubernetes, GitOps, OTel, supply-chain security, GPUs</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
           <div>
             <h4>Required Skills</h4>
             <ul class="checks">
-              <li>Hands-on experience with Infrastructure as Code tools such as Terraform and Ansible</li>
-              <li>Ability to set up GitOps based pipelines and software quality tools for linting, code coverage, etc.</li>
-              <li>Expertise in scripting languages such as Python and bash</li>
-              <li>Experience managing cloud based and serverless deployments atop Kubernetes, DC/OS, and cloud managed services</li>
-              <li>Experience with large scale monitoring and instrumentation infrastructure such as Prometheus, Grafana, and Loki</li>
-              <li>Brownie points for a cloud vendor certification, or one in Kubernetes or Docker</li>
+              <li>Infrastructure as Code with Terraform or OpenTofu, and Pulumi or Ansible where they fit better</li>
+              <li>Kubernetes in anger, with GitOps delivery through Argo CD or Flux</li>
+              <li>Software supply-chain security: SBOMs, signing with Sigstore, provenance, and scanning with Trivy or Grype</li>
+              <li>Policy as code with OPA or Kyverno, and secrets handled through Vault or External Secrets</li>
+              <li>Observability built on OpenTelemetry — Prometheus, Grafana, Loki, Tempo — with SLOs that drive decisions</li>
+              <li>Platform engineering instincts: paved roads and self-service beat ticket queues</li>
+              <li>Running inference workloads — GPU scheduling, vLLM or Triton, model and artifact registries</li>
+              <li>Sandboxing and egress control for agent workloads, and eval gates as a CI step alongside tests</li>
+              <li>FinOps as a habit, with cloud and token spend both attributable</li>
+              <li>Brownie points for a cloud, Kubernetes, or security certification</li>
             </ul>
           </div>
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20—%20DevOps%20Engineer">Apply →</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20DevOps%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -241,25 +262,28 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-05</span>
-          <span><span class="role-t">Data Engineer</span><span class="role-tldr">TL;DR — Python, Pandas, Spark, Flink, Airflow, ClickHouse/Druid, Kafka</span></span>
+          <span><span class="role-t">Data Engineer</span><span class="role-tldr">TL;DR &mdash; Python, dbt, Iceberg, DuckDB, Dagster, Flink, Kafka, retrieval pipelines</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
           <div>
             <h4>Required Skills</h4>
             <ul class="checks">
-              <li>Hands-on experience setting up scalable data pipelines with batch, streaming, and hybrid (Lambda and Kappa) architectures</li>
-              <li>Deep expertise in big data frameworks such as Spark, Flink, Kafka, JanusGraph, and the ilk</li>
-              <li>Ability to engineer multi-tiered data lakes both on-prem and in the cloud</li>
-              <li>Experience modelling large scale data warehouses with Snowflake, Redshift, BigQuery, Druid, and ClickHouse</li>
-              <li>Zest for setting up intuitive BI dashboards using Tableau, PowerBI, Superset, or Metabase</li>
-              <li>Brownie points for a cloud vendor certification, or one in a technology such as Spark</li>
+              <li>Lakehouse architecture on Iceberg or Delta over object storage, and knowing when a warehouse is simply the better answer</li>
+              <li>Transformation with dbt or SQLMesh, modelled well enough that analysts trust it</li>
+              <li>Orchestration in Dagster, Airflow 3, or Prefect, with assets and lineage rather than a pile of cron</li>
+              <li>Streaming with Kafka and Flink, and change data capture through Debezium</li>
+              <li>Query engines chosen on merit — DuckDB, ClickHouse, Trino, Snowflake, BigQuery</li>
+              <li>Data quality as a contract: expectations, tests, and OpenLineage-based lineage</li>
+              <li>Retrieval pipelines end to end — parsing, chunking, embedding, and refresh — feeding pgvector, Qdrant, or LanceDB</li>
+              <li>Hybrid search with reranking, and the evaluation to prove it beats what it replaced</li>
+              <li>Brownie points for document-heavy pipelines: layout-aware parsing at volume</li>
             </ul>
           </div>
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20—%20Data%20Engineer">Apply →</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20Data%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -267,25 +291,28 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-06</span>
-          <span><span class="role-t">Data Scientist</span><span class="role-tldr">TL;DR — Python, Pandas, Spark, Sklearn, TensorFlow, NLTK, Tesseract</span></span>
+          <span><span class="role-t">AI / ML Engineer</span><span class="role-tldr">TL;DR &mdash; PyTorch, Hugging Face, RAG, agents, fine-tuning, evals, MLflow</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
           <div>
             <h4>Required Skills</h4>
             <ul class="checks">
-              <li>Hands-on skills and experience in machine learning, data mining, and predictive analytics</li>
-              <li>Scripting skills in at least one of R, Python, or Julia, alongside declarative SQL-like querying in a notebook environment</li>
-              <li>Ability to take a high level problem, convert it into a hypothesis, and apply statistical methods and AI to solve it</li>
-              <li>A passion for using radical and unconventional means to make data talk and even sing</li>
-              <li>Real-world experience preferred in Spark, TensorFlow, AutoML, PyTorch, MLFlow/Kubeflow, Tesseract, and the Python data science troika (NumPy, Matplotlib, Pandas)</li>
-              <li>Brownie points for a PhD or publications at top tier conferences such as NeurIPS, ICML, or CVPR</li>
+              <li>PyTorch and the Hugging Face ecosystem, with scikit-learn for the many problems that never needed a network</li>
+              <li>Working fluency with frontier and open-weight models, and a view on when each is the right call</li>
+              <li>Retrieval-augmented generation done properly — chunking strategy, hybrid search, reranking, and citation fidelity</li>
+              <li>Agentic systems: tool use, planning and decomposition, multi-step execution, and recovery when a step fails</li>
+              <li>Adaptation techniques and their trade-offs — prompting, LoRA/QLoRA fine-tuning, distillation, quantisation</li>
+              <li>Evaluation as the core discipline: offline suites, online experiments, and honest error analysis</li>
+              <li>MLOps with MLflow or Weights &amp; Biases, model registries, and drift monitoring after launch</li>
+              <li>Document AI: layout-aware extraction and vision-language OCR on messy, real-world scans</li>
+              <li>Brownie points for publications at NeurIPS, ICML, ICLR, or CVPR — or a model card you are proud of</li>
             </ul>
           </div>
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20—%20Data%20Scientist">Apply →</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20AI%20%2F%20ML%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -339,12 +366,16 @@
 
 <template id="commonTpl">
   <h4>Common Denominators</h4>
-  <p class="role-tldr" style="margin:-.5rem 0 1rem">TL;DR — Polyglotism, Software Engineering, Programming</p>
+  <p class="role-tldr" style="margin:-.5rem 0 1rem">TL;DR &mdash; Judgement, verification, polyglotism</p>
   <ul class="checks">
     <li>An undergraduate or graduate degree in a STEM field</li>
     <li>Any level of experience. We hire for skills and passion, not for the length of your resume</li>
-    <li>Donald Knuth-level expertise of algorithms and data structures, where in your head everything is O(n)</li>
-    <li>Polyglotism in programming languages. We're agnostic but prefer TypeScript, Python, Golang, and Java</li>
+    <li>Donald Knuth-level expertise of algorithms and data structures where in your head everything is O(n)</li>
+    <li>Polyglotism in programming languages. We&rsquo;re agnostic but prefer TypeScript, Python, Go, and Rust</li>
+    <li>Fluency with coding agents as a daily tool &mdash; scoping work an agent can execute, and knowing when to do it yourself instead</li>
+    <li>Reviewing machine-generated diffs as carefully as human ones, because volume is no excuse</li>
+    <li>A verification instinct: types, tests, and property-based checks, so correctness does not rest on reading every line</li>
+    <li>Keeping repositories legible to people and agents alike &mdash; clear boundaries, honest docs, fast CI</li>
     <li>Software engineering best practices such as writing modular, testable, and performant code</li>
     <li>A hunger for solving problems using outside the box thinking</li>
     <li>Partake in code reviews and aim to embody the boy scout rule</li>
