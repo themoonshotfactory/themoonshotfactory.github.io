@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Careers — The Moonshot Factory</title>
+<title>Careers · The Moonshot Factory</title>
 <meta name="description" content="Remote-first engineering roles at The Moonshot Factory. We hire for skills and passion, not the length of your resume.">
 <meta name="theme-color" content="#324068">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -26,7 +26,7 @@
 
 <header>
   <nav class="nav">
-    <a class="brand" href="index.html" aria-label="The Moonshot Factory — home">
+    <a class="brand" href="index.html" aria-label="The Moonshot Factory home">
       <img src="assets/logo.svg" alt="">
       <b>Moonshot Factory</b>
     </a>
@@ -35,6 +35,9 @@
         <a href="index.html#services" aria-haspopup="true">Services ▾</a>
         <div class="nav-menu">
           <a href="devsecops.html">DevSecOps</a>
+          <a href="confidential-ai.html">Confidential AI</a>
+          <a href="agent-assurance.html">Agent Assurance</a>
+          <a href="agent-tooling.html">Agent Tooling</a>
           <a href="index.html#services">Knowledge Solutions</a>
           <a href="index.html#services">AI for Unstructured Data</a>
         </div>
@@ -81,7 +84,7 @@
     </div>
 
     <div class="hero-foot">
-      <p>Code, products, data, experiences — and your career. We are a remote-first company, so you can work from anywhere. Yes, anywhere. Even out of a hammock in the Bahamas.</p>
+      <p>Code, products, data, experiences, and your career. We are a remote-first company, so you can work from anywhere. Yes, anywhere. Even out of a hammock in the Bahamas.</p>
       <div class="hero-cta">
         <a href="#positions" class="btn">See Open Roles →</a>
         <a href="mailto:careers@themoonshotfactory.com?subject=Job%20Application" class="btn btn-o">Send a Resume</a>
@@ -135,7 +138,7 @@
          box-shadow:6px 6px 0 #32406814;padding:1.75rem 1.6rem;margin-top:2.5rem">
       <p class="stamp-label">How we work with AI</p>
       <p style="margin-top:.9rem;color:var(--grey);font-size:.97rem">Coding agents are part of the
-        toolkit here, not a secret. We expect you to use them well &mdash; and to review what they
+        toolkit here, not a secret. We expect you to use them well, and to review what they
         produce as rigorously as anything you wrote by hand. You are welcome to use them in our
         interviews too; we are more interested in how you direct and verify the work than in
         watching you type.</p>
@@ -146,27 +149,27 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-01</span>
-          <span><span class="role-t">Frontend Engineer</span><span class="role-tldr">TL;DR &mdash; TypeScript, React 19, Next.js, Tailwind, Playwright, streaming AI UIs</span></span>
+          <span><span class="role-t">Frontend Engineer</span><span class="role-tldr">TL;DR: TypeScript, React 19, Next.js, Tailwind, Playwright, streaming AI UIs</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
           <div>
             <h4>Required Skills</h4>
             <ul class="checks">
-              <li>Deep TypeScript, and modern React — Server Components, Suspense, streaming, and the transition APIs</li>
+              <li>Deep TypeScript, and modern React: Server Components, Suspense, streaming, and the transition APIs</li>
               <li>App architecture in Next.js or React Router 7, with a real opinion about where rendering should happen</li>
               <li>Styling with Tailwind and design tokens; comfortable with container queries, cascade layers, and modern native CSS</li>
-              <li>Typed data access end to end — TanStack Query with tRPC, or GraphQL/OpenAPI codegen</li>
+              <li>Typed data access end to end, via TanStack Query with tRPC or GraphQL/OpenAPI codegen</li>
               <li>Testing with Vitest and React Testing Library, Playwright for end-to-end, and visual regression where it earns its keep</li>
               <li>Accessibility to WCAG 2.2 and Core Web Vitals (INP in particular) treated as requirements, not polish</li>
               <li>Interfaces for AI output: token streaming, interruptible generations, citations, confidence, and human-in-the-loop approval steps</li>
-              <li>Brownie points for data visualisation at scale — Visx, Observable Plot, or D3 when nothing else will do</li>
+              <li>Brownie points for data visualisation at scale: Visx, Observable Plot, or D3 when nothing else will do</li>
             </ul>
           </div>
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20Frontend%20Engineer">Apply &rarr;</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%3A%20Frontend%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -174,18 +177,18 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-02</span>
-          <span><span class="role-t">Backend Engineer</span><span class="role-tldr">TL;DR &mdash; Python 3.13, FastAPI, Pydantic, async, Postgres, MCP, tool-calling</span></span>
+          <span><span class="role-t">Backend Engineer</span><span class="role-tldr">TL;DR: Python 3.13, FastAPI, Pydantic, async, Postgres, MCP, tool-calling</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
           <div>
             <h4>Required Skills</h4>
             <ul class="checks">
-              <li>Modern async Python — FastAPI, Pydantic v2, SQLAlchemy 2.0 — or an equivalent TypeScript stack</li>
+              <li>Modern async Python (FastAPI, Pydantic v2, SQLAlchemy 2.0), or an equivalent TypeScript stack</li>
               <li>Current Python tooling as a matter of course: uv, ruff, and a type checker in CI</li>
               <li>Postgres as a first-class tool, pgvector included; Redis, and event-driven work over Kafka or NATS</li>
               <li>API design across REST/OpenAPI, gRPC, and GraphQL, with authorisation and tenancy considered from the start</li>
-              <li>Durable execution and background work — Temporal, Celery, or arq — and idempotency you can defend</li>
+              <li>Durable execution and background work with Temporal, Celery, or arq, plus idempotency you can defend</li>
               <li>Building for LLMs: tool and function calling, MCP servers, structured outputs, streaming, and retries around non-deterministic calls</li>
               <li>Treating token cost and latency as engineering budgets, with caching and model routing to match</li>
               <li>Designing against prompt injection and running agent-executed code in a sandbox, not in your process</li>
@@ -195,7 +198,7 @@
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20Backend%20Engineer">Apply &rarr;</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%3A%20Backend%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -203,7 +206,7 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-03</span>
-          <span><span class="role-t">Quality &amp; Evals Engineer</span><span class="role-tldr">TL;DR &mdash; Playwright, pytest, k6, contract testing, LLM eval harnesses, red-teaming</span></span>
+          <span><span class="role-t">Quality &amp; Evals Engineer</span><span class="role-tldr">TL;DR: Playwright, pytest, k6, contract testing, LLM eval harnesses, red-teaming</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
@@ -214,7 +217,7 @@
               <li>Load and soak testing with k6 or Locust, and the judgement to know what the results mean</li>
               <li>Contract testing (Pact, Schemathesis) and property-based testing (Hypothesis, fast-check)</li>
               <li>Owning CI quality gates: flake triage, test data management, and keeping the suite fast enough that people run it</li>
-              <li>Evaluating non-deterministic systems — golden sets, rubric grading, LLM-as-judge calibrated against human labels</li>
+              <li>Evaluating non-deterministic systems: golden sets, rubric grading, LLM-as-judge calibrated against human labels</li>
               <li>Regression suites for model and prompt changes, so a swap can ship without crossed fingers</li>
               <li>Adversarial testing: jailbreaks, prompt injection, data exfiltration, and tool-abuse paths</li>
               <li>Debugging from traces rather than reproducing by hand</li>
@@ -224,7 +227,7 @@
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20Quality%20and%20Evals%20Engineer">Apply &rarr;</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%3A%20Quality%20and%20Evals%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -232,7 +235,7 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-04</span>
-          <span><span class="role-t">DevOps Engineer</span><span class="role-tldr">TL;DR &mdash; OpenTofu/Terraform, Kubernetes, GitOps, OTel, supply-chain security, GPUs</span></span>
+          <span><span class="role-t">DevOps Engineer</span><span class="role-tldr">TL;DR: OpenTofu/Terraform, Kubernetes, GitOps, OTel, supply-chain security, GPUs</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
@@ -243,9 +246,9 @@
               <li>Kubernetes in anger, with GitOps delivery through Argo CD or Flux</li>
               <li>Software supply-chain security: SBOMs, signing with Sigstore, provenance, and scanning with Trivy or Grype</li>
               <li>Policy as code with OPA or Kyverno, and secrets handled through Vault or External Secrets</li>
-              <li>Observability built on OpenTelemetry — Prometheus, Grafana, Loki, Tempo — with SLOs that drive decisions</li>
+              <li>Observability built on OpenTelemetry (Prometheus, Grafana, Loki, Tempo), with SLOs that drive decisions</li>
               <li>Platform engineering instincts: paved roads and self-service beat ticket queues</li>
-              <li>Running inference workloads — GPU scheduling, vLLM or Triton, model and artifact registries</li>
+              <li>Running inference workloads: GPU scheduling, vLLM or Triton, model and artifact registries</li>
               <li>Sandboxing and egress control for agent workloads, and eval gates as a CI step alongside tests</li>
               <li>FinOps as a habit, with cloud and token spend both attributable</li>
               <li>Brownie points for a cloud, Kubernetes, or security certification</li>
@@ -254,7 +257,7 @@
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20DevOps%20Engineer">Apply &rarr;</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%3A%20DevOps%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -262,7 +265,7 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-05</span>
-          <span><span class="role-t">Data Engineer</span><span class="role-tldr">TL;DR &mdash; Python, dbt, Iceberg, DuckDB, Dagster, Flink, Kafka, retrieval pipelines</span></span>
+          <span><span class="role-t">Data Engineer</span><span class="role-tldr">TL;DR: Python, dbt, Iceberg, DuckDB, Dagster, Flink, Kafka, retrieval pipelines</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
@@ -273,9 +276,9 @@
               <li>Transformation with dbt or SQLMesh, modelled well enough that analysts trust it</li>
               <li>Orchestration in Dagster, Airflow 3, or Prefect, with assets and lineage rather than a pile of cron</li>
               <li>Streaming with Kafka and Flink, and change data capture through Debezium</li>
-              <li>Query engines chosen on merit — DuckDB, ClickHouse, Trino, Snowflake, BigQuery</li>
+              <li>Query engines chosen on merit: DuckDB, ClickHouse, Trino, Snowflake, BigQuery</li>
               <li>Data quality as a contract: expectations, tests, and OpenLineage-based lineage</li>
-              <li>Retrieval pipelines end to end — parsing, chunking, embedding, and refresh — feeding pgvector, Qdrant, or LanceDB</li>
+              <li>Retrieval pipelines end to end (parsing, chunking, embedding, and refresh) feeding pgvector, Qdrant, or LanceDB</li>
               <li>Hybrid search with reranking, and the evaluation to prove it beats what it replaced</li>
               <li>Brownie points for document-heavy pipelines: layout-aware parsing at volume</li>
             </ul>
@@ -283,7 +286,7 @@
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20Data%20Engineer">Apply &rarr;</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%3A%20Data%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -291,7 +294,7 @@
       <details class="role">
         <summary>
           <span class="role-n">ROLE-06</span>
-          <span><span class="role-t">AI / ML Engineer</span><span class="role-tldr">TL;DR &mdash; PyTorch, Hugging Face, RAG, agents, fine-tuning, evals, MLflow</span></span>
+          <span><span class="role-t">AI / ML Engineer</span><span class="role-tldr">TL;DR: PyTorch, Hugging Face, RAG, agents, fine-tuning, evals, MLflow</span></span>
           <span class="role-x">+</span>
         </summary>
         <div class="role-body">
@@ -300,19 +303,19 @@
             <ul class="checks">
               <li>PyTorch and the Hugging Face ecosystem, with scikit-learn for the many problems that never needed a network</li>
               <li>Working fluency with frontier and open-weight models, and a view on when each is the right call</li>
-              <li>Retrieval-augmented generation done properly — chunking strategy, hybrid search, reranking, and citation fidelity</li>
+              <li>Retrieval-augmented generation done properly: chunking strategy, hybrid search, reranking, and citation fidelity</li>
               <li>Agentic systems: tool use, planning and decomposition, multi-step execution, and recovery when a step fails</li>
-              <li>Adaptation techniques and their trade-offs — prompting, LoRA/QLoRA fine-tuning, distillation, quantisation</li>
+              <li>Adaptation techniques and their trade-offs: prompting, LoRA/QLoRA fine-tuning, distillation, quantisation</li>
               <li>Evaluation as the core discipline: offline suites, online experiments, and honest error analysis</li>
               <li>MLOps with MLflow or Weights &amp; Biases, model registries, and drift monitoring after launch</li>
               <li>Document AI: layout-aware extraction and vision-language OCR on messy, real-world scans</li>
-              <li>Brownie points for publications at NeurIPS, ICML, ICLR, or CVPR — or a model card you are proud of</li>
+              <li>Brownie points for publications at NeurIPS, ICML, ICLR, or CVPR, or a model card you are proud of</li>
             </ul>
           </div>
           <div data-common></div>
           <div class="role-apply">
             <span>Send your resume to careers@themoonshotfactory.com</span>
-            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%20&mdash;%20AI%20%2F%20ML%20Engineer">Apply &rarr;</a>
+            <a class="btn" href="mailto:careers@themoonshotfactory.com?subject=Job%20Application%3A%20AI%20%2F%20ML%20Engineer">Apply &rarr;</a>
           </div>
         </div>
       </details>
@@ -366,16 +369,16 @@
 
 <template id="commonTpl">
   <h4>Common Denominators</h4>
-  <p class="role-tldr" style="margin:-.5rem 0 1rem">TL;DR &mdash; Judgement, verification, polyglotism</p>
+  <p class="role-tldr" style="margin:-.5rem 0 1rem">TL;DR: Judgement, verification, polyglotism</p>
   <ul class="checks">
     <li>An undergraduate or graduate degree in a STEM field</li>
     <li>Any level of experience. We hire for skills and passion, not for the length of your resume</li>
     <li>Donald Knuth-level expertise of algorithms and data structures where in your head everything is O(n)</li>
     <li>Polyglotism in programming languages. We&rsquo;re agnostic but prefer TypeScript, Python, Go, and Rust</li>
-    <li>Fluency with coding agents as a daily tool &mdash; scoping work an agent can execute, and knowing when to do it yourself instead</li>
+    <li>Fluency with coding agents as a daily tool: scoping work an agent can execute, and knowing when to do it yourself instead</li>
     <li>Reviewing machine-generated diffs as carefully as human ones, because volume is no excuse</li>
     <li>A verification instinct: types, tests, and property-based checks, so correctness does not rest on reading every line</li>
-    <li>Keeping repositories legible to people and agents alike &mdash; clear boundaries, honest docs, fast CI</li>
+    <li>Keeping repositories legible to people and agents alike: clear boundaries, honest docs, fast CI</li>
     <li>Software engineering best practices such as writing modular, testable, and performant code</li>
     <li>A hunger for solving problems using outside the box thinking</li>
     <li>Partake in code reviews and aim to embody the boy scout rule</li>
@@ -384,8 +387,7 @@
 
 <script src="assets/site.js"></script>
 <script>
-  /* the "Common Denominators" block is identical for every role —
-     stamped in from one template rather than repeated six times */
+  /* the "Common Denominators" block is identical for every role, stamped in from one template rather than repeated six times */
   const tpl = document.getElementById('commonTpl');
   document.querySelectorAll('[data-common]').forEach(slot => slot.append(tpl.content.cloneNode(true)));
 </script>

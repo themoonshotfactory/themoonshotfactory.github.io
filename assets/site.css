@@ -182,8 +182,12 @@ header{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:2p
   position:relative;display:flex;flex-direction:column;
   box-shadow:6px 6px 0 #32406814;transition:transform .3s var(--ease),box-shadow .3s var(--ease);
 }
+/* slight, varied tilt so a six-card grid still reads as pinned-up cards */
 .mod:nth-child(2){rotate:-.5deg}
 .mod:nth-child(3){rotate:.4deg}
+.mod:nth-child(4){rotate:.35deg}
+.mod:nth-child(5){rotate:-.3deg}
+.mod:nth-child(6){rotate:.45deg}
 .mod:hover{transform:translateY(-8px) rotate(0deg);box-shadow:10px 12px 0 var(--navy)}
 .mod::before{content:"";position:absolute;top:-11px;left:50%;translate:-50% 0;width:86px;height:22px;background:var(--tape);border-left:1px dashed #32406830;border-right:1px dashed #32406830;rotate:-1.6deg}
 .mod-id{font-size:.68rem;font-weight:700;letter-spacing:.22em;color:var(--royal)}
@@ -445,3 +449,12 @@ footer{background:var(--navy);color:var(--paper);padding-block:1.5rem}
 }
 .clutch-holder .clutch-widget{max-width:100%}
 @media(max-width:1024px){.reviews-grid{grid-template-columns:1fr;gap:2.25rem}}
+
+/* text chips — used where a vendor mark would be invented rather than owned */
+.chip-t{
+  display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.02em;
+  color:var(--navy);background:var(--card);border:1.5px solid var(--rule);
+  padding:.45rem .8rem;margin:0 .5rem .5rem 0;transition:border-color .25s,transform .25s var(--ease);
+}
+.chip-t:hover{border-color:var(--cyan);transform:translateY(-2px)}
+.trail-h div b{font-size:.95rem}
