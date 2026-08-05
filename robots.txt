@@ -1,0 +1,7 @@
+# www.themoonshotfactory.com
+# Everything here is public marketing material — nothing to hold back.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.themoonshotfactory.com/sitemap.xml

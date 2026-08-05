@@ -5,6 +5,9 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $  = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  // analytics.js may be blocked or absent; measurement is never a
+  // reason for the site itself to stop working
+  const track = (n, p) => window.tmfTrack && window.tmfTrack(n, p);
 
   /* ── mobile menu ───────────────────────────────────────── */
   const burger = $('#burger'), navLinks = $('#navLinks');
@@ -84,6 +87,20 @@
     setTimeout(() => rk.classList.remove('launch'), 1400);
   });
 
+  /* ── HubSpot visitor tracking ──────────────────────────────
+     Separate from the forms script below: this is what ties a
+     submission to its original source inside the CRM. It writes
+     the hubspotutk cookie, so it waits for consent. The form
+     still works without it — it just arrives unattributed.       */
+  if (window.tmfOnConsent) window.tmfOnConsent(() => {
+    const s = document.createElement('script');
+    s.id = 'hs-script-loader';
+    s.async = true;
+    s.defer = true;
+    s.src = 'https://js.hs-scripts.com/22649393.js';
+    document.head.appendChild(s);
+  });
+
   /* ── contact modal + HubSpot ───────────────────────────── */
   const modal = $('#contactModal');
   if (modal) {
@@ -117,8 +134,33 @@
       mountForm();
       modal.showModal();
       document.body.style.overflow = 'hidden';
+      // funnel step one: which CTA on which page started the enquiry
+      const src = e && e.currentTarget;
+      track('contact_open', {
+        cta_text: src ? (src.textContent || '').trim().slice(0, 60) : 'unknown',
+        page_path: location.pathname
+      });
     };
     const close = () => { modal.close(); document.body.style.overflow = ''; };
+
+    /* the conversion itself. HubSpot's v2 embed reports back by
+       postMessage from its iframe, which is the only reliable
+       submit signal — the form's own DOM is cross-origin.
+       The origin check matters: without it any frame on the page
+       could post a fake callback and inflate the lead count. */
+    const HS_ORIGINS = /(^|\.)(hsforms\.com|hsforms\.net|hubspot\.com)$/;
+    addEventListener('message', e => {
+      let host;
+      try { host = new URL(e.origin).hostname; } catch { return; }
+      if (!HS_ORIGINS.test(host)) return;
+      const d = e.data;
+      if (!d || d.type !== 'hsFormCallback') return;
+      if (d.eventName === 'onFormSubmitted') {
+        track('generate_lead', {form_id: d.id || HS.formId, page_path: location.pathname});
+      } else if (d.eventName === 'onFormReady') {
+        track('contact_form_ready', {form_id: d.id || HS.formId});
+      }
+    });
 
     $$('[data-contact]').forEach(el => el.addEventListener('click', open));
     $$('[data-close]', modal).forEach(el => el.addEventListener('click', close));

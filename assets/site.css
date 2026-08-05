@@ -458,3 +458,35 @@ footer{background:var(--navy);color:var(--paper);padding-block:1.5rem}
 }
 .chip-t:hover{border-color:var(--cyan);transform:translateY(-2px)}
 .trail-h div b{font-size:.95rem}
+
+/* ── consent banner ────────────────────────────────────────────
+   Injected by assets/analytics.js. Sits above the sticky header
+   but below the contact modal, so a visitor mid-enquiry isn't
+   fighting two layers. Bottom-anchored: it never covers the h1. */
+.consent{
+  position:fixed;left:0;right:0;bottom:0;z-index:150;
+  padding:clamp(.75rem,2vw,1.25rem);
+  transform:translateY(115%);transition:transform .42s var(--ease);
+}
+.consent.in{transform:translateY(0)}
+.consent.out{transform:translateY(115%)}
+.consent-card{
+  max-width:var(--max);margin-inline:auto;
+  background:var(--paper);border:2px solid var(--navy);
+  box-shadow:8px 8px 0 var(--navy);
+  padding:1.15rem clamp(1rem,2.5vw,1.75rem);
+  display:flex;align-items:center;gap:clamp(1rem,3vw,2.5rem);flex-wrap:wrap;
+}
+.consent-copy{flex:1 1 22rem;min-width:0}
+.consent-copy p:not(.stamp-label){
+  margin-top:.5rem;font-size:.88rem;line-height:1.55;color:var(--grey);max-width:68ch;
+}
+.consent-acts{display:flex;gap:.7rem;flex:none;margin-left:auto}
+.consent-acts .btn{padding:.7rem 1.15rem}
+@media(max-width:640px){
+  .consent-acts{margin-left:0;width:100%}
+  .consent-acts .btn{flex:1;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+  .consent{transition:none}
+}
